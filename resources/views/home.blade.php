@@ -17,18 +17,20 @@
 
 <div>
     <h2> Faça seu cadastro: </h2>
-    <form action="#" method="POST">
+    <form action="/cadastrar" method="POST">@csrf
         <label for="cadastro-login">Login: </label>
-        <input type="text">
+        <input name= "login" type="text">
 
         <label for="cadastro-email">Email: </label>
-        <input type="text">
+        <input name= "email" type="text">
 
         <label for="cadastro-senha">Senha: </label>
-        <input type="password">
+        <input name="senha" type="password">
 
         <label for="cadastro-senha-confirmacao">Confirme sua senha: </label>
-        <input type="password">
+        <input name="senha-confirmation" type="password">
+
+        <button> Cadastrar</button>
     </form>
 </div>
 </body>
